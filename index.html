@@ -4,29 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Spotify - Web Player</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="utility.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/utility.css" />
 </head>
 <body>
   <div class="container flex bg-black">
     <div class="left">
       <div class="close">
-        <img class="invert" src="close.svg" alt="">
+        <img class="invert" src="img/close.svg" alt="">
       </div>
 
       <div class="home bg-grey rounded m-1 p-1">
         <div class="logo">
-          <img class="invert" src="logo.svg" alt="" />Spotify
+          <img class="invert" src="img/logo.svg" alt="" />Spotify
         </div>
         <ul>
-          <li><img class="invert" src="home.svg" alt="Home" />Home</li>
-          <li><img class="invert" src="search.svg" alt="Search" />Search</li>
+          <li><img class="invert" src="img/home.svg" alt="Home" />Home</li>
+          <li><img class="invert" src="img/search.svg" alt="Search" />Search</li>
         </ul>
       </div>
 
       <div class="library bg-grey rounded m-1 p-1">
         <div class="heading">
-          <img class="invert" src="playlist.svg" alt="" />
+          <img class="invert" src="img/playlist.svg" alt="" />
           <h2>Your Library</h2>
         </div>
         <div class="songlist">
@@ -49,7 +49,7 @@
       <div class="header">
         <div class="nav">
           <div class="hamburgercon">
-            <img width="35px" class="hamburger" src="hamburger.svg" alt="" />
+            <img width="35px" class="hamburger" src="img/hamburger.svg" alt="" />
           </div>
         </div>
         <div class="button">
@@ -61,6 +61,7 @@
       <div class="spotify-playlist">
         <h1>Spotify Playlist</h1>
         <div class="cardcontainer">
+          <!-- Album cards injected here -->
         </div>
         <div class="playbar">
           <div class="seekbar">
@@ -69,14 +70,14 @@
           <div class="abovebar">
             <div class="songinfo"></div>
             <div class="songbutton">
-              <img width="30" id="previous" src="previous.svg" alt="" />
-              <img width="30" id="play" src="play.svg" alt="" />
-              <img width="30" id="next" src="nextsong.svg" alt="" />
+              <img width="30" id="previous" src="img/previous.svg" alt="previous" />
+              <img width="30" id="play" src="img/play.svg" alt="play" />
+              <img width="30" id="next" src="img/nextsong.svg" alt="next" />
             </div>
             <div class="volume-width">
               <div class="songtime"></div>
               <div class="volume">
-                <img width="25" src="volume.svg" alt="">
+                <img width="25" src="img/volume.svg" alt="volume">
                 <div class="range">
                   <input type="range" min="0" max="100" value="100">
                 </div>
@@ -88,6 +89,6 @@
       </div>
     </div>
   </div>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
